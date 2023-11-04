@@ -13,8 +13,8 @@ namespace otopark
             ApplicationConfiguration.Initialize();
             Application.Run(new Giris());
         }
-        public static string[] sifreler=new string[] {"123","abc","1"};
-        public static string[] kullaniciAdlari=new string[] { "serhat karacasulu", "serhat", "karacasulu"};
+        public static string[] sifreler=new string[] {"123","1","abc"};
+        public static string[] kullaniciAdlari=new string[] { "admin", "serhat karacasulu", "karacasulu"};
 
     }
 }

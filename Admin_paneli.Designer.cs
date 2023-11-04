@@ -1,6 +1,6 @@
 ﻿namespace otopark
 {
-    partial class kullanici_kayit
+    partial class Admin_paneli
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
-            // button1
+            // checkBox1
             // 
-            button1.Location = new Point(423, 230);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(407, 129);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(83, 19);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
             // 
-            // kullanici_kayit
+            // Admin_paneli
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Name = "kullanici_kayit";
-            Text = "Kallnıcı Kayıt";
+            Controls.Add(checkBox1);
+            Name = "Admin_paneli";
+            Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private CheckBox checkBox1;
     }
 }

@@ -14,22 +14,35 @@ namespace otopark
         private void button2_Click(object sender, EventArgs e)
         {
 
-            var bulundu = false;
+            int bulundu = 0;
             for (int i = 0; i < 3; i++)
             {
-                if (text_ad_giris.Text == Program.kullaniciAdlari[i] && text_sifre_giris.Text == Program.sifreler[i])
+                if (text_ad_giris.Text == Program.kullaniciAdlari[0] && text_sifre_giris.Text == Program.sifreler[0])
                 {
-                    bulundu = true;
+                    bulundu = 1;
+                    break;
+                }
+                else if (text_ad_giris.Text == Program.kullaniciAdlari[i] && text_sifre_giris.Text == Program.sifreler[i])
+                {
+                    bulundu = 2;
                     break;
                 }
             }
-            if (bulundu == true)
+            if (bulundu == 1)
+            {
+                MessageBox.Show("Giriþ yapýldý");
+                Admin_paneli admin_paneli = new Admin_paneli();
+                admin_paneli.Show();
+                this.Hide();
+            }
+
+            else if (bulundu == 2)
             {
                 MessageBox.Show("Giriþ yapýldý");
                 kullanici_kayit Kullanici_kayit = new kullanici_kayit();
-
-                // Form2'yi gösterin ve modally açýn (form2 kapanana kadar form1 üzerinde çalýþamazsýnýz)
                 Kullanici_kayit.Show();
+                this.Hide();
+
             }
 
             else
