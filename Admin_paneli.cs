@@ -16,5 +16,10 @@ namespace otopark
         {
             InitializeComponent();
         }
+
+        private void Admin_paneli_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
