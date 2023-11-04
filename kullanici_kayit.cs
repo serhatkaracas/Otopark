@@ -21,5 +21,10 @@ namespace otopark
         {
 
         }
+
+        private void kullanici_kayit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
