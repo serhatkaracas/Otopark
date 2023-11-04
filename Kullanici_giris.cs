@@ -39,8 +39,8 @@ namespace otopark
             else if (bulundu == 2)
             {
                 MessageBox.Show("Giriþ yapýldý");
-                kullanici_kayit Kullanici_kayit = new kullanici_kayit();
-                Kullanici_kayit.Show();
+                Kullanici_paneli kullanici_paneli = new Kullanici_paneli();
+                kullanici_paneli.Show();
                 this.Hide();
 
             }
@@ -61,7 +61,12 @@ namespace otopark
 
         }
 
-  
+        private void button_Hesapolustur_Click(object sender, EventArgs e)
+        {
+            kullanici_kayit Kullanici_kayit = new kullanici_kayit();
+            Kullanici_kayit.Show();
+            this.Hide();
+        }
     }
 
 }
