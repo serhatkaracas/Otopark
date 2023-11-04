@@ -7,7 +7,7 @@ namespace otopark
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Kullanici_giris(object sender, EventArgs e)
         {
             MessageBox.Show("Kullanýcý giriþ ekranýna hoþgeldiniz");
         }
@@ -55,6 +55,13 @@ namespace otopark
         {
             MessageBox.Show("Þifre sýfýrlama baðlantýsý mail adresine gönderildi");
         }
+
+        private void Giris_Load(object sender, EventArgs e)
+        {
+
+        }
+
+  
     }
 
 }

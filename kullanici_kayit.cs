@@ -17,14 +17,25 @@ namespace otopark
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void kullanici_kayit_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button_kayit_Click(object sender, EventArgs e)
+        {
+            Giris giris = new Giris();
+            giris.Show();
+            this.Hide();
+        }
+
+        private void Kaiyit_giris_Click(object sender, EventArgs e)
+        {
+            Giris giris = new Giris();
+            giris.Show();
+            this.Hide();
         }
     }
 }

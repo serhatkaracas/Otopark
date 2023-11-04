@@ -1,5 +1,5 @@
 ﻿namespace otopark
-    {
+{
     partial class Giris
     {
         /// <summary>
@@ -34,7 +34,7 @@
             button_sifremiunuttum = new Button();
             button_giris = new Button();
             text_sifre_giris = new TextBox();
-            button1 = new Button();
+            button_Hesapolustur = new Button();
             SuspendLayout();
             // 
             // label1
@@ -93,14 +93,14 @@
             text_sifre_giris.TabIndex = 5;
             text_sifre_giris.UseSystemPasswordChar = true;
             // 
-            // button1
+            // button_Hesapolustur
             // 
-            button1.Location = new Point(207, 196);
-            button1.Name = "button1";
-            button1.Size = new Size(123, 29);
-            button1.TabIndex = 6;
-            button1.Text = "Hesap oluştur";
-            button1.UseVisualStyleBackColor = true;
+            button_Hesapolustur.Location = new Point(207, 196);
+            button_Hesapolustur.Name = "button_Hesapolustur";
+            button_Hesapolustur.Size = new Size(123, 29);
+            button_Hesapolustur.TabIndex = 6;
+            button_Hesapolustur.Text = "Hesap oluştur";
+            button_Hesapolustur.UseVisualStyleBackColor = true;
             // 
             // Giris
             // 
@@ -108,7 +108,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 128);
             ClientSize = new Size(463, 333);
-            Controls.Add(button1);
+            Controls.Add(button_Hesapolustur);
             Controls.Add(text_sifre_giris);
             Controls.Add(button_giris);
             Controls.Add(button_sifremiunuttum);
@@ -117,7 +117,7 @@
             Controls.Add(label1);
             Name = "Giris";
             Text = "Giriş ekranı";
-            Load += Form1_Load;
+            Load += Giris_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -130,6 +130,6 @@
         private Button button_sifremiunuttum;
         private Button button_giris;
         private TextBox text_sifre_giris;
-        private Button button1;
+        private Button button_Hesapolustur;
     }
 }

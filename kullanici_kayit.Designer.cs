@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            Button_kayit = new Button();
             label1 = new Label();
             label2 = new Label();
             textBox1 = new TextBox();
@@ -36,21 +36,21 @@
             textBox3 = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            button2 = new Button();
+            Kaiyit_giris = new Button();
             textBox4 = new TextBox();
             label5 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // Button_kayit
             // 
-            button1.BackColor = Color.Lime;
-            button1.Location = new Point(317, 257);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "Kayıt";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            Button_kayit.BackColor = Color.Lime;
+            Button_kayit.Location = new Point(317, 257);
+            Button_kayit.Name = "Button_kayit";
+            Button_kayit.Size = new Size(94, 29);
+            Button_kayit.TabIndex = 0;
+            Button_kayit.Text = "Kayıt";
+            Button_kayit.UseVisualStyleBackColor = false;
+            Button_kayit.Click += Button_kayit_Click;
             // 
             // label1
             // 
@@ -109,15 +109,16 @@
             label4.TabIndex = 7;
             label4.Text = "Hesabınız varsa";
             // 
-            // button2
+            // Kaiyit_giris
             // 
-            button2.BackColor = Color.DarkOliveGreen;
-            button2.Location = new Point(317, 292);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 8;
-            button2.Text = "Giriş yap";
-            button2.UseVisualStyleBackColor = false;
+            Kaiyit_giris.BackColor = Color.DarkOliveGreen;
+            Kaiyit_giris.Location = new Point(317, 292);
+            Kaiyit_giris.Name = "Kaiyit_giris";
+            Kaiyit_giris.Size = new Size(94, 29);
+            Kaiyit_giris.TabIndex = 8;
+            Kaiyit_giris.Text = "Giriş yap";
+            Kaiyit_giris.UseVisualStyleBackColor = false;
+            Kaiyit_giris.Click += Kaiyit_giris_Click;
             // 
             // textBox4
             // 
@@ -143,7 +144,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(textBox4);
             Controls.Add(label5);
-            Controls.Add(button2);
+            Controls.Add(Kaiyit_giris);
             Controls.Add(label4);
             Controls.Add(textBox3);
             Controls.Add(label3);
@@ -151,9 +152,9 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button1);
+            Controls.Add(Button_kayit);
             Name = "kullanici_kayit";
-            Text = "Kallnıcı Kayıt";
+            Text = "Kullanıcı Kayıt";
             Load += kullanici_kayit_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -172,5 +173,8 @@
         private Button button2;
         private TextBox textBox4;
         private Label label5;
+        private Button Kayit;
+        private Button Kaiyit_giris;
+        private Button Button_kayit;
     }
 }
