@@ -67,7 +67,7 @@
             label12 = new Label();
             button_musterisec = new Button();
             button1 = new Button();
-            button2 = new Button();
+            button_cikisadmin = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -390,15 +390,16 @@
             button1.Text = "Ücreti güncelle";
             button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // button_cikisadmin
             // 
-            button2.BackColor = Color.Red;
-            button2.Location = new Point(153, 560);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 23);
-            button2.TabIndex = 42;
-            button2.Text = "Çıkış";
-            button2.UseVisualStyleBackColor = false;
+            button_cikisadmin.BackColor = Color.Red;
+            button_cikisadmin.Location = new Point(153, 560);
+            button_cikisadmin.Name = "button_cikisadmin";
+            button_cikisadmin.Size = new Size(100, 23);
+            button_cikisadmin.TabIndex = 42;
+            button_cikisadmin.Text = "Çıkış";
+            button_cikisadmin.UseVisualStyleBackColor = false;
+            button_cikisadmin.Click += button_cikisadmin_Click;
             // 
             // Admin_paneli
             // 
@@ -406,7 +407,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
             ClientSize = new Size(1571, 657);
-            Controls.Add(button2);
+            Controls.Add(button_cikisadmin);
             Controls.Add(button1);
             Controls.Add(button_musterisec);
             Controls.Add(label12);
@@ -494,6 +495,6 @@
         private Label label12;
         private Button button_musterisec;
         private Button button1;
-        private Button button2;
+        private Button button_cikisadmin;
     }
 }
