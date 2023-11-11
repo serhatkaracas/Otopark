@@ -31,13 +31,13 @@
             Button_kayit = new Button();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            textBox_ad = new TextBox();
+            textBox_sifre = new TextBox();
+            textBox_Plaka = new TextBox();
             label3 = new Label();
             label4 = new Label();
             Kaiyit_giris = new Button();
-            textBox4 = new TextBox();
+            textBox_e_posta = new TextBox();
             label5 = new Label();
             SuspendLayout();
             // 
@@ -70,26 +70,27 @@
             label2.TabIndex = 2;
             label2.Text = "Şifre";
             // 
-            // textBox1
+            // textBox_ad
             // 
-            textBox1.Location = new Point(317, 75);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 3;
+            textBox_ad.Location = new Point(317, 75);
+            textBox_ad.Name = "textBox_ad";
+            textBox_ad.Size = new Size(125, 27);
+            textBox_ad.TabIndex = 3;
             // 
-            // textBox2
+            // textBox_sifre
             // 
-            textBox2.Location = new Point(317, 119);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 4;
+            textBox_sifre.Location = new Point(317, 119);
+            textBox_sifre.Name = "textBox_sifre";
+            textBox_sifre.Size = new Size(125, 27);
+            textBox_sifre.TabIndex = 4;
             // 
-            // textBox3
+            // textBox_Plaka
             // 
-            textBox3.Location = new Point(317, 163);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 6;
+            textBox_Plaka.Location = new Point(317, 163);
+            textBox_Plaka.Name = "textBox_Plaka";
+            textBox_Plaka.Size = new Size(125, 27);
+            textBox_Plaka.TabIndex = 6;
+            textBox_Plaka.TextChanged += textBox_Plaka_TextChanged;
             // 
             // label3
             // 
@@ -120,12 +121,12 @@
             Kaiyit_giris.UseVisualStyleBackColor = false;
             Kaiyit_giris.Click += Kaiyit_giris_Click;
             // 
-            // textBox4
+            // textBox_e_posta
             // 
-            textBox4.Location = new Point(317, 216);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 10;
+            textBox_e_posta.Location = new Point(317, 216);
+            textBox_e_posta.Name = "textBox_e_posta";
+            textBox_e_posta.Size = new Size(125, 27);
+            textBox_e_posta.TabIndex = 10;
             // 
             // label5
             // 
@@ -142,14 +143,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 128);
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox4);
+            Controls.Add(textBox_e_posta);
             Controls.Add(label5);
             Controls.Add(Kaiyit_giris);
             Controls.Add(label4);
-            Controls.Add(textBox3);
+            Controls.Add(textBox_Plaka);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textBox_sifre);
+            Controls.Add(textBox_ad);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(Button_kayit);
@@ -165,13 +166,13 @@
         private Button button1;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textBox_ad;
+        private TextBox textBox_sifre;
+        private TextBox textBox_Plaka;
         private Label label3;
         private Label label4;
         private Button button2;
-        private TextBox textBox4;
+        private TextBox textBox_e_posta;
         private Label label5;
         private Button Kayit;
         private Button Kaiyit_giris;

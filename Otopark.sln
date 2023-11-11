@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "otopark", "otopark.csproj", "{6E2D9DB7-0514-4208-854B-E95BACBC2F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siniflar", "..\Siniflar\Siniflar.csproj", "{3B06ECED-D329-49EB-95F3-31395272E0EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6E2D9DB7-0514-4208-854B-E95BACBC2F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E2D9DB7-0514-4208-854B-E95BACBC2F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E2D9DB7-0514-4208-854B-E95BACBC2F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B06ECED-D329-49EB-95F3-31395272E0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B06ECED-D329-49EB-95F3-31395272E0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B06ECED-D329-49EB-95F3-31395272E0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B06ECED-D329-49EB-95F3-31395272E0EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
