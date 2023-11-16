@@ -155,6 +155,7 @@
             Controls.Add(label1);
             Controls.Add(Button_kayit);
             Name = "kullanici_kayit";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Kullanıcı Kayıt";
             Load += kullanici_kayit_Load;
             ResumeLayout(false);
@@ -177,5 +178,6 @@
         private Button Kayit;
         private Button Kaiyit_giris;
         private Button Button_kayit;
+        private ComboBox comboBox1;
     }
 }

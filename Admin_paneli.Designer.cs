@@ -68,143 +68,156 @@
             button_musterisec = new Button();
             button1 = new Button();
             button_cikisadmin = new Button();
+            comboBox_musteriler = new ComboBox();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(236, 76);
+            textBox1.Location = new Point(270, 101);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(114, 27);
             textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(362, 76);
+            textBox2.Location = new Point(414, 101);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(57, 23);
+            textBox2.Size = new Size(65, 27);
             textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(362, 129);
+            textBox3.Location = new Point(414, 172);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(57, 23);
+            textBox3.Size = new Size(65, 27);
             textBox3.TabIndex = 4;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(236, 129);
+            textBox4.Location = new Point(270, 172);
+            textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
+            textBox4.Size = new Size(114, 27);
             textBox4.TabIndex = 3;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(362, 181);
+            textBox5.Location = new Point(414, 241);
+            textBox5.Margin = new Padding(3, 4, 3, 4);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(57, 23);
+            textBox5.Size = new Size(65, 27);
             textBox5.TabIndex = 6;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(236, 181);
+            textBox6.Location = new Point(270, 241);
+            textBox6.Margin = new Padding(3, 4, 3, 4);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
+            textBox6.Size = new Size(114, 27);
             textBox6.TabIndex = 5;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(362, 338);
+            textBox7.Location = new Point(414, 451);
+            textBox7.Margin = new Padding(3, 4, 3, 4);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(57, 23);
+            textBox7.Size = new Size(65, 27);
             textBox7.TabIndex = 12;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(236, 338);
+            textBox8.Location = new Point(270, 451);
+            textBox8.Margin = new Padding(3, 4, 3, 4);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
+            textBox8.Size = new Size(114, 27);
             textBox8.TabIndex = 11;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(362, 286);
+            textBox9.Location = new Point(414, 381);
+            textBox9.Margin = new Padding(3, 4, 3, 4);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(57, 23);
+            textBox9.Size = new Size(65, 27);
             textBox9.TabIndex = 10;
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(236, 286);
+            textBox10.Location = new Point(270, 381);
+            textBox10.Margin = new Padding(3, 4, 3, 4);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(100, 23);
+            textBox10.Size = new Size(114, 27);
             textBox10.TabIndex = 9;
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(362, 236);
+            textBox11.Location = new Point(414, 315);
+            textBox11.Margin = new Padding(3, 4, 3, 4);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(57, 23);
+            textBox11.Size = new Size(65, 27);
             textBox11.TabIndex = 8;
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(236, 233);
+            textBox12.Location = new Point(270, 311);
+            textBox12.Margin = new Padding(3, 4, 3, 4);
             textBox12.Name = "textBox12";
-            textBox12.Size = new Size(100, 23);
+            textBox12.Size = new Size(114, 27);
             textBox12.TabIndex = 7;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(174, 84);
+            label1.Location = new Point(199, 112);
             label1.Name = "label1";
-            label1.Size = new Size(13, 15);
+            label1.Size = new Size(17, 20);
             label1.TabIndex = 13;
             label1.Text = "1";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(174, 137);
+            label2.Location = new Point(199, 183);
             label2.Name = "label2";
-            label2.Size = new Size(13, 15);
+            label2.Size = new Size(17, 20);
             label2.TabIndex = 14;
             label2.Text = "2";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(174, 189);
+            label3.Location = new Point(199, 252);
             label3.Name = "label3";
-            label3.Size = new Size(13, 15);
+            label3.Size = new Size(17, 20);
             label3.TabIndex = 16;
             label3.Text = "3";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(174, 286);
+            label5.Location = new Point(199, 381);
             label5.Name = "label5";
-            label5.Size = new Size(13, 15);
+            label5.Size = new Size(17, 20);
             label5.TabIndex = 18;
             label5.Text = "5";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(174, 236);
+            label6.Location = new Point(199, 315);
             label6.Name = "label6";
-            label6.Size = new Size(13, 15);
+            label6.Size = new Size(17, 20);
             label6.TabIndex = 17;
             label6.Text = "4";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(174, 338);
+            label7.Location = new Point(199, 451);
             label7.Name = "label7";
-            label7.Size = new Size(13, 15);
+            label7.Size = new Size(17, 20);
             label7.TabIndex = 19;
             label7.Text = "6";
             // 
@@ -212,9 +225,9 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.FromArgb(255, 255, 128);
-            label4.Location = new Point(236, 49);
+            label4.Location = new Point(270, 65);
             label4.Name = "label4";
-            label4.Size = new Size(60, 15);
+            label4.Size = new Size(75, 20);
             label4.TabIndex = 20;
             label4.Text = "Müşteriler";
             // 
@@ -222,9 +235,9 @@
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.FromArgb(255, 255, 128);
-            label8.Location = new Point(362, 49);
+            label8.Location = new Point(414, 65);
             label8.Name = "label8";
-            label8.Size = new Size(57, 15);
+            label8.Size = new Size(73, 20);
             label8.TabIndex = 21;
             label8.Text = "Giriş saati";
             // 
@@ -232,61 +245,67 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.FromArgb(255, 255, 128);
-            label9.Location = new Point(439, 49);
+            label9.Location = new Point(502, 65);
             label9.Name = "label9";
-            label9.Size = new Size(76, 15);
+            label9.Size = new Size(96, 20);
             label9.TabIndex = 28;
             label9.Text = "Çıkacağı saat";
             // 
             // textBox13
             // 
-            textBox13.Location = new Point(439, 338);
+            textBox13.Location = new Point(502, 451);
+            textBox13.Margin = new Padding(3, 4, 3, 4);
             textBox13.Name = "textBox13";
-            textBox13.Size = new Size(57, 23);
+            textBox13.Size = new Size(65, 27);
             textBox13.TabIndex = 27;
             // 
             // textBox14
             // 
-            textBox14.Location = new Point(439, 286);
+            textBox14.Location = new Point(502, 381);
+            textBox14.Margin = new Padding(3, 4, 3, 4);
             textBox14.Name = "textBox14";
-            textBox14.Size = new Size(57, 23);
+            textBox14.Size = new Size(65, 27);
             textBox14.TabIndex = 26;
             // 
             // textBox15
             // 
-            textBox15.Location = new Point(439, 236);
+            textBox15.Location = new Point(502, 315);
+            textBox15.Margin = new Padding(3, 4, 3, 4);
             textBox15.Name = "textBox15";
-            textBox15.Size = new Size(57, 23);
+            textBox15.Size = new Size(65, 27);
             textBox15.TabIndex = 25;
             // 
             // textBox16
             // 
-            textBox16.Location = new Point(439, 181);
+            textBox16.Location = new Point(502, 241);
+            textBox16.Margin = new Padding(3, 4, 3, 4);
             textBox16.Name = "textBox16";
-            textBox16.Size = new Size(57, 23);
+            textBox16.Size = new Size(65, 27);
             textBox16.TabIndex = 24;
             // 
             // textBox17
             // 
-            textBox17.Location = new Point(439, 129);
+            textBox17.Location = new Point(502, 172);
+            textBox17.Margin = new Padding(3, 4, 3, 4);
             textBox17.Name = "textBox17";
-            textBox17.Size = new Size(57, 23);
+            textBox17.Size = new Size(65, 27);
             textBox17.TabIndex = 23;
             // 
             // textBox18
             // 
-            textBox18.Location = new Point(439, 75);
+            textBox18.Location = new Point(502, 100);
+            textBox18.Margin = new Padding(3, 4, 3, 4);
             textBox18.Name = "textBox18";
-            textBox18.Size = new Size(57, 23);
+            textBox18.Size = new Size(65, 27);
             textBox18.TabIndex = 22;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.BackColor = Color.FromArgb(255, 255, 128);
-            label10.Location = new Point(153, 49);
+            label10.Location = new Point(175, 65);
             label10.Name = "label10";
-            label10.Size = new Size(52, 15);
+            label10.Size = new Size(64, 20);
             label10.TabIndex = 29;
             label10.Text = "Park yeri";
             // 
@@ -294,9 +313,9 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.FromArgb(0, 192, 0);
-            label11.Location = new Point(633, 149);
+            label11.Location = new Point(723, 199);
             label11.Name = "label11";
-            label11.Size = new Size(73, 15);
+            label11.Size = new Size(93, 20);
             label11.TabIndex = 37;
             label11.Text = "Ücret tarifesi";
             // 
@@ -304,9 +323,9 @@
             // 
             label13.AutoSize = true;
             label13.BackColor = Color.FromArgb(192, 255, 192);
-            label13.Location = new Point(654, 289);
+            label13.Location = new Point(747, 385);
             label13.Name = "label13";
-            label13.Size = new Size(81, 15);
+            label13.Size = new Size(102, 20);
             label13.TabIndex = 35;
             label13.Text = "Aylık abonelik";
             // 
@@ -314,9 +333,9 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.FromArgb(192, 255, 192);
-            label14.Location = new Point(654, 237);
+            label14.Location = new Point(747, 316);
             label14.Name = "label14";
-            label14.Size = new Size(45, 15);
+            label14.Size = new Size(54, 20);
             label14.TabIndex = 34;
             label14.Text = "Günlük";
             // 
@@ -324,58 +343,64 @@
             // 
             label15.AutoSize = true;
             label15.BackColor = Color.FromArgb(192, 255, 192);
-            label15.Location = new Point(654, 184);
+            label15.Location = new Point(747, 245);
             label15.Name = "label15";
-            label15.Size = new Size(41, 15);
+            label15.Size = new Size(53, 20);
             label15.TabIndex = 33;
             label15.Text = "Saatlik";
             // 
             // textBox19
             // 
-            textBox19.Location = new Point(754, 280);
+            textBox19.Location = new Point(862, 373);
+            textBox19.Margin = new Padding(3, 4, 3, 4);
             textBox19.Name = "textBox19";
-            textBox19.Size = new Size(100, 23);
+            textBox19.Size = new Size(114, 27);
             textBox19.TabIndex = 32;
             // 
             // textBox20
             // 
-            textBox20.Location = new Point(754, 228);
+            textBox20.Location = new Point(862, 304);
+            textBox20.Margin = new Padding(3, 4, 3, 4);
             textBox20.Name = "textBox20";
-            textBox20.Size = new Size(100, 23);
+            textBox20.Size = new Size(114, 27);
             textBox20.TabIndex = 31;
             // 
             // textBox21
             // 
-            textBox21.Location = new Point(754, 175);
+            textBox21.Location = new Point(862, 233);
+            textBox21.Margin = new Padding(3, 4, 3, 4);
             textBox21.Name = "textBox21";
-            textBox21.Size = new Size(100, 23);
+            textBox21.Size = new Size(114, 27);
             textBox21.TabIndex = 30;
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(1007, 84);
+            listBox1.ItemHeight = 20;
+            listBox1.Location = new Point(1151, 112);
+            listBox1.Margin = new Padding(3, 4, 3, 4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(120, 499);
+            listBox1.Size = new Size(151, 104);
             listBox1.TabIndex = 38;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.BackColor = Color.FromArgb(255, 255, 128);
-            label12.Location = new Point(1007, 46);
+            label12.Location = new Point(1151, 61);
             label12.Name = "label12";
-            label12.Size = new Size(79, 15);
+            label12.Size = new Size(99, 20);
             label12.TabIndex = 39;
             label12.Text = "Müşteri listesi";
             // 
             // button_musterisec
             // 
             button_musterisec.BackColor = Color.FromArgb(128, 255, 128);
-            button_musterisec.Location = new Point(1178, 84);
+            button_musterisec.Location = new Point(1346, 112);
+            button_musterisec.Margin = new Padding(3, 4, 3, 4);
             button_musterisec.Name = "button_musterisec";
-            button_musterisec.Size = new Size(75, 23);
+            button_musterisec.Size = new Size(86, 31);
             button_musterisec.TabIndex = 40;
             button_musterisec.Text = "müşteri seç";
             button_musterisec.UseVisualStyleBackColor = false;
@@ -383,9 +408,10 @@
             // button1
             // 
             button1.BackColor = Color.LightCoral;
-            button1.Location = new Point(754, 334);
+            button1.Location = new Point(862, 445);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(100, 23);
+            button1.Size = new Size(114, 31);
             button1.TabIndex = 41;
             button1.Text = "Ücreti güncelle";
             button1.UseVisualStyleBackColor = false;
@@ -393,20 +419,31 @@
             // button_cikisadmin
             // 
             button_cikisadmin.BackColor = Color.Red;
-            button_cikisadmin.Location = new Point(153, 560);
+            button_cikisadmin.Location = new Point(175, 747);
+            button_cikisadmin.Margin = new Padding(3, 4, 3, 4);
             button_cikisadmin.Name = "button_cikisadmin";
-            button_cikisadmin.Size = new Size(100, 23);
+            button_cikisadmin.Size = new Size(114, 31);
             button_cikisadmin.TabIndex = 42;
             button_cikisadmin.Text = "Çıkış";
             button_cikisadmin.UseVisualStyleBackColor = false;
             button_cikisadmin.Click += button_cikisadmin_Click;
             // 
+            // comboBox_musteriler
+            // 
+            comboBox_musteriler.FormattingEnabled = true;
+            comboBox_musteriler.Location = new Point(1151, 263);
+            comboBox_musteriler.Name = "comboBox_musteriler";
+            comboBox_musteriler.Size = new Size(151, 28);
+            comboBox_musteriler.TabIndex = 43;
+            comboBox_musteriler.SelectedIndexChanged += comboBox_musteriler_SelectedIndexChanged;
+            // 
             // Admin_paneli
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
-            ClientSize = new Size(1571, 657);
+            ClientSize = new Size(1795, 876);
+            Controls.Add(comboBox_musteriler);
             Controls.Add(button_cikisadmin);
             Controls.Add(button1);
             Controls.Add(button_musterisec);
@@ -448,6 +485,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             ForeColor = Color.Black;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Admin_paneli";
             Text = "Yönetici ekranı";
             Load += Admin_paneli_Load;
@@ -496,5 +534,6 @@
         private Button button_musterisec;
         private Button button1;
         private Button button_cikisadmin;
+        private ComboBox comboBox_musteriler;
     }
 }

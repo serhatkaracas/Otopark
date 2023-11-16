@@ -13,21 +13,26 @@ namespace otopark
 {
     public partial class kullanici_kayit : Form
     {
+        public static List<Kullanicilar> Kullanici_list = new List<Kullanicilar>();
         public kullanici_kayit()
         {
             InitializeComponent();
         }
 
-
         private void kullanici_kayit_Load(object sender, EventArgs e)
         {
-
         }
-        private Siniflar.Kullanicilar yeni;
+        public Siniflar.Kullanicilar yeni;
 
         private void Button_kayit_Click(object sender, EventArgs e)
         {
-            yeni = new Siniflar.Kullanicilar(textBox_ad.Text, textBox_sifre.Text,textBox_Plaka.Text, textBox_e_posta.Text );
+            Kullanicilar yeni = new Kullanicilar();
+            yeni.ad = textBox_ad.Text;
+            yeni.sifre = textBox_sifre.Text;
+            yeni.plaka = textBox_Plaka.Text;
+            yeni.e_posta = textBox_e_posta.Text;
+            Kullanici_list.Add(yeni);
+
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
@@ -40,7 +45,9 @@ namespace otopark
             this.Hide();
         }
 
-        private void textBox_Plaka_TextChanged(object sender, EventArgs e)
+        private void textBox_Plaka_TextChanged(object sender, EventArgs e) { }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

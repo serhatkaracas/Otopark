@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace otopark
 {
@@ -19,7 +20,10 @@ namespace otopark
 
         private void Admin_paneli_Load(object sender, EventArgs e)
         {
-
+            foreach (var eleman in kullanici_kayit.Kullanici_list)
+            {
+                listBox1.Items.Add(eleman.ad);
+            }
         }
 
         private void button_cikisadmin_Click(object sender, EventArgs e)
@@ -27,6 +31,15 @@ namespace otopark
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void comboBox_musteriler_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

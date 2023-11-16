@@ -1,3 +1,5 @@
+using Siniflar;
+
 namespace otopark
 {
     public partial class Giris : Form
@@ -5,6 +7,7 @@ namespace otopark
         public Giris()
         {
             InitializeComponent();
+
         }
 
         private void Kullanici_giris(object sender, EventArgs e)
@@ -15,14 +18,14 @@ namespace otopark
         {
 
             int bulundu = 0;
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < kullanici_kayit.Kullanici_list.Count; i++)
             {
                 if (text_ad_giris.Text == Program.kullaniciAdlari[0] && text_sifre_giris.Text == Program.sifreler[0])
                 {
                     bulundu = 1;
                     break;
                 }
-                else if (text_ad_giris.Text == Program.kullaniciAdlari[i] && text_sifre_giris.Text == Program.sifreler[i])
+                else if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].sifre)
                 {
                     bulundu = 2;
                     break;
