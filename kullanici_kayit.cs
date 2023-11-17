@@ -32,7 +32,6 @@ namespace otopark
             yeni.plaka = textBox_Plaka.Text;
             yeni.e_posta = textBox_e_posta.Text;
             Kullanici_list.Add(yeni);
-
             Giris giris = new Giris();
             giris.Show();
             this.Hide();

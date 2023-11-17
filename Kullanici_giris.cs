@@ -17,10 +17,10 @@ namespace otopark
         private void button2_Click(object sender, EventArgs e)
         {
 
-            int bulundu = 0;
+            int bulundu = 1;
             for (int i = 0; i < kullanici_kayit.Kullanici_list.Count; i++)
             {
-                if (text_ad_giris.Text == Program.kullaniciAdlari[0] && text_sifre_giris.Text == Program.sifreler[0])
+                if (text_ad_giris.Text == "admin" && text_sifre_giris.Text == "1")
                 {
                     bulundu = 1;
                     break;
@@ -33,7 +33,7 @@ namespace otopark
             }
             if (bulundu == 1)
             {
-                MessageBox.Show("Giriþ yapýldý");
+                MessageBox.Show("Hoþ geldin yönetici");
                 Admin_paneli admin_paneli = new Admin_paneli();
                 admin_paneli.Show();
                 this.Hide();

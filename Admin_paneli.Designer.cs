@@ -69,6 +69,15 @@
             button1 = new Button();
             button_cikisadmin = new Button();
             comboBox_musteriler = new ComboBox();
+            comboBox_otoparkListesi = new ComboBox();
+            label16 = new Label();
+            textBox_otopark_adi = new TextBox();
+            comboBox_parkYeriListesi = new ComboBox();
+            button_oparkEkle = new Button();
+            label17 = new Label();
+            label18 = new Label();
+            textBox_park_yeri_sayisi = new TextBox();
+            label19 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -437,12 +446,100 @@
             comboBox_musteriler.TabIndex = 43;
             comboBox_musteriler.SelectedIndexChanged += comboBox_musteriler_SelectedIndexChanged;
             // 
+            // comboBox_otoparkListesi
+            // 
+            comboBox_otoparkListesi.FormattingEnabled = true;
+            comboBox_otoparkListesi.Location = new Point(1274, 536);
+            comboBox_otoparkListesi.Name = "comboBox_otoparkListesi";
+            comboBox_otoparkListesi.Size = new Size(151, 28);
+            comboBox_otoparkListesi.TabIndex = 44;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(1142, 364);
+            label16.Name = "label16";
+            label16.Size = new Size(88, 20);
+            label16.TabIndex = 46;
+            label16.Text = "Otopark adı";
+            // 
+            // textBox_otopark_adi
+            // 
+            textBox_otopark_adi.Location = new Point(1271, 364);
+            textBox_otopark_adi.Margin = new Padding(3, 4, 3, 4);
+            textBox_otopark_adi.Name = "textBox_otopark_adi";
+            textBox_otopark_adi.Size = new Size(114, 27);
+            textBox_otopark_adi.TabIndex = 45;
+            // 
+            // comboBox_parkYeriListesi
+            // 
+            comboBox_parkYeriListesi.FormattingEnabled = true;
+            comboBox_parkYeriListesi.Location = new Point(1274, 594);
+            comboBox_parkYeriListesi.Name = "comboBox_parkYeriListesi";
+            comboBox_parkYeriListesi.Size = new Size(151, 28);
+            comboBox_parkYeriListesi.TabIndex = 47;
+            // 
+            // button_oparkEkle
+            // 
+            button_oparkEkle.BackColor = Color.LightCoral;
+            button_oparkEkle.Location = new Point(1274, 473);
+            button_oparkEkle.Margin = new Padding(3, 4, 3, 4);
+            button_oparkEkle.Name = "button_oparkEkle";
+            button_oparkEkle.Size = new Size(114, 31);
+            button_oparkEkle.TabIndex = 48;
+            button_oparkEkle.Text = "Otopark ekle";
+            button_oparkEkle.UseVisualStyleBackColor = false;
+            button_oparkEkle.Click += button_oparkEkle_Click;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(1142, 544);
+            label17.Name = "label17";
+            label17.Size = new Size(104, 20);
+            label17.TabIndex = 49;
+            label17.Text = "Otopark listesi";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(1149, 594);
+            label18.Name = "label18";
+            label18.Size = new Size(81, 20);
+            label18.TabIndex = 50;
+            label18.Text = "Park yerleri";
+            // 
+            // textBox_park_yeri_sayisi
+            // 
+            textBox_park_yeri_sayisi.Location = new Point(1271, 415);
+            textBox_park_yeri_sayisi.Name = "textBox_park_yeri_sayisi";
+            textBox_park_yeri_sayisi.Size = new Size(125, 27);
+            textBox_park_yeri_sayisi.TabIndex = 51;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(1142, 422);
+            label19.Name = "label19";
+            label19.Size = new Size(103, 20);
+            label19.TabIndex = 52;
+            label19.Text = "Park yeri sayisi";
+            // 
             // Admin_paneli
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
             ClientSize = new Size(1795, 876);
+            Controls.Add(label19);
+            Controls.Add(textBox_park_yeri_sayisi);
+            Controls.Add(label18);
+            Controls.Add(label17);
+            Controls.Add(button_oparkEkle);
+            Controls.Add(comboBox_parkYeriListesi);
+            Controls.Add(label16);
+            Controls.Add(textBox_otopark_adi);
+            Controls.Add(comboBox_otoparkListesi);
             Controls.Add(comboBox_musteriler);
             Controls.Add(button_cikisadmin);
             Controls.Add(button1);
@@ -535,5 +632,15 @@
         private Button button1;
         private Button button_cikisadmin;
         private ComboBox comboBox_musteriler;
+        private ComboBox comboBox_otoparkListesi;
+        private Label label16;
+        private TextBox textBox_otopark_adi;
+        private ComboBox comboBox_parkYeriListesi;
+        private Button buttonot_oparkEkle;
+        private Label label17;
+        private Label label18;
+        private TextBox textBox_park_yeri_sayisi;
+        private Label label19;
+        private Button button_oparkEkle;
     }
 }
