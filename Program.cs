@@ -11,10 +11,10 @@ namespace otopark
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Giris());
+            Application.Run(new Admin_paneli());
         }
         public static string[] sifreler=new string[] {"a"};
-        public static string[] kullaniciAdlari=new string[] { "admin"};
+        public static string[] kullaniciAdlari=new string[] {"admin"};
 
     }
 }
