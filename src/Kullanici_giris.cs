@@ -25,7 +25,7 @@ namespace otopark
                     bulundu = 1;
                     break;
                 }
-                else if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].sifre)
+                else if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].Ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].Sifre)
                 {
                     bulundu = 2;
                     break;

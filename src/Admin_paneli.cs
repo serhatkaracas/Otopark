@@ -27,7 +27,7 @@ namespace otopark
         {
             foreach (var eleman in kullanici_kayit.Kullanici_list)
             {
-                listBox1.Items.Add(eleman.ad);
+                listBox1.Items.Add(eleman.Ad);
             }
         }
 
@@ -63,7 +63,7 @@ namespace otopark
             for (int i = 0; i < yeni_otopark.park_yeri_sayisi; i++)
             {
                 ParkYeri park = new ParkYeri();
-                park.doluluk = "boş";
+                park.Doluluk = "boş";
                 park.park_yeri_no = i + 1;
                 park.otopark_no = yeni_otopark.otopark_no; ;
                 parkYeriListesi.Add(park);

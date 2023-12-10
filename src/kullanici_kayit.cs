@@ -13,7 +13,7 @@ namespace otopark
 {
     public partial class kullanici_kayit : Form
     {
-        public static List<Kullanicilar> Kullanici_list = new List<Kullanicilar>();
+        public static List<Kullanici> Kullanici_list = new List<Kullanici>();
         public kullanici_kayit()
         {
             InitializeComponent();
@@ -22,15 +22,15 @@ namespace otopark
         private void kullanici_kayit_Load(object sender, EventArgs e)
         {
         }
-        public Siniflar.Kullanicilar yeni;
+        public Siniflar.Kullanici yeni;
 
         private void Button_kayit_Click(object sender, EventArgs e)
         {
-            Kullanicilar yeni = new Kullanicilar();
-            yeni.ad = textBox_ad.Text;
-            yeni.sifre = textBox_sifre.Text;
-            yeni.plaka = textBox_Plaka.Text;
-            yeni.e_posta = textBox_e_posta.Text;
+            Kullanici yeni = new Kullanici();
+            yeni.Ad = textBox_ad.Text;
+            yeni.Sifre = textBox_sifre.Text;
+            yeni.Plaka = textBox_Plaka.Text;
+            yeni.EPosta = textBox_e_posta.Text;
             Kullanici_list.Add(yeni);
             Giris giris = new Giris();
             giris.Show();
