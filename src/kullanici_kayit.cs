@@ -32,9 +32,11 @@ namespace otopark
             yeni.Plaka = textBox_Plaka.Text;
             yeni.EPosta = textBox_e_posta.Text;
             Kullanici_list.Add(yeni);
+            MessageBox.Show(yeni.Mesaj());
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
+
         }
 
         private void Kaiyit_giris_Click(object sender, EventArgs e)

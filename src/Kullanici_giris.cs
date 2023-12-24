@@ -7,16 +7,13 @@ namespace otopark
         public Giris()
         {
             InitializeComponent();
-
         }
-
         private void Kullanici_giris(object sender, EventArgs e)
         {
             MessageBox.Show("Kullanýcý giriþ ekranýna hoþgeldiniz");
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
             int bulundu = 1;
             for (int i = 0; i < kullanici_kayit.Kullanici_list.Count; i++)
             {
@@ -33,37 +30,27 @@ namespace otopark
             }
             if (bulundu == 1)
             {
-                MessageBox.Show("Hoþ geldin yönetici");
                 Admin_paneli admin_paneli = new Admin_paneli();
                 admin_paneli.Show();
                 this.Hide();
             }
-
             else if (bulundu == 2)
             {
                 MessageBox.Show("Giriþ yapýldý");
                 Kullanici_paneli kullanici_paneli = new Kullanici_paneli();
                 kullanici_paneli.Show();
                 this.Hide();
-
             }
-
             else
             {
                 MessageBox.Show("Kullanýcý adý veya þifre hatalý");
             }
         }
-
         private void button_sifremiunuttum_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Þifre sýfýrlama baðlantýsý mail adresine gönderildi");
         }
-
-        private void Giris_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        private void Giris_Load(object sender, EventArgs e){}
         private void button_Hesapolustur_Click(object sender, EventArgs e)
         {
             kullanici_kayit Kullanici_kayit = new kullanici_kayit();
@@ -71,5 +58,4 @@ namespace otopark
             this.Hide();
         }
     }
-
 }

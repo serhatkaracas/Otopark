@@ -1,4 +1,6 @@
-﻿using System;
+﻿using otopark;
+using Siniflar;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +21,10 @@ namespace otopark
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button_kullanicicikis_Click(object sender, EventArgs e)
@@ -36,7 +36,6 @@ namespace otopark
 
         private void button1_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

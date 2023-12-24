@@ -19,6 +19,8 @@ namespace otopark
     {
         public Admin_paneli()
         {
+            Admin admin = new Admin("Serhat", "a", 505111, "a@a.com");
+            MessageBox.Show(admin.Mesaj());
             InitializeComponent();
         }
         static public List<Otopark> otoparklist = new List<Otopark>();
@@ -30,22 +32,14 @@ namespace otopark
                 listBox1.Items.Add(eleman.Ad);
             }
         }
-
         private void button_cikisadmin_Click(object sender, EventArgs e)
         {
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void comboBox_musteriler_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e) { }
+        private void comboBox_musteriler_SelectedIndexChanged(object sender, EventArgs e) { }
         public Siniflar.Otopark yeni_otopark;
         private void button_oparkEkle_Click(object sender, EventArgs e)
         {
@@ -54,12 +48,12 @@ namespace otopark
             yeni_otopark.park_yeri_sayisi = int.Parse(textBox_park_yeri_sayisi.Text);
             yeni_otopark.otopark_no = int.Parse(textBox_otopark_no.Text);
 
-            otoparklist.Add(yeni_otopark); // Listeye yeni otopark ekleyin
-            comboBox_otoparkListesi.DataSource = null; // ComboBox'ın DataSource'unu temizleyin
-            comboBox_otoparkListesi.DataSource = otoparklist; // Listeyi yeniden ata
-            comboBox_otoparkListesi.DisplayMember = "ad"; // Gösterilecek metni belirleyin
-            comboBox_otoparkListesi.ValueMember = "otopark_no"; // Arka plandaki değeri belirleyin
-
+            otoparklist.Add(yeni_otopark); 
+            comboBox_otoparkListesi.DataSource = null; 
+            comboBox_otoparkListesi.DataSource = otoparklist; 
+            comboBox_otoparkListesi.DisplayMember = "ad"; 
+            comboBox_otoparkListesi.ValueMember = "otopark_no";
+            MessageBox.Show(yeni_otopark.Kaydedildi());
             for (int i = 0; i < yeni_otopark.park_yeri_sayisi; i++)
             {
                 ParkYeri park = new ParkYeri();
@@ -69,14 +63,12 @@ namespace otopark
                 parkYeriListesi.Add(park);
             }
         }
-
         private void comboBox_otoparkListesi_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox_otoparkListesi.SelectedValue != null)
             {
-                
                 var sonuc = parkYeriListesi.Where(p => p.otopark_no == (int)comboBox_otoparkListesi.SelectedValue).ToList();
-               
+
                 comboBox_parkYeriListesi.DataSource = sonuc;
                 comboBox_parkYeriListesi.DisplayMember = "park_yeri_no";
                 comboBox_parkYeriListesi.ValueMember = "otopark_no";
