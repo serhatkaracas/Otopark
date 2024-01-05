@@ -26,17 +26,19 @@ namespace otopark
 
         private void Button_kayit_Click(object sender, EventArgs e)
         {
-            Kullanici yeni = new Kullanici();
-            yeni.Ad = textBox_ad.Text;
-            yeni.Sifre = textBox_sifre.Text;
-            yeni.Plaka = textBox_Plaka.Text;
-            yeni.EPosta = textBox_e_posta.Text;
-            Kullanici_list.Add(yeni);
-            MessageBox.Show(yeni.Mesaj());
+            Kullanici yeniKullanici = new Kullanici();
+            yeniKullanici.Id = Guid.NewGuid();
+            yeniKullanici.Ad = textBox_ad.Text;
+            yeniKullanici.Sifre = textBox_sifre.Text;
+            yeniKullanici.Plaka = textBox_Plaka.Text;
+            yeniKullanici.EPosta = textBox_e_posta.Text;
+            Kullanici_list.Add(yeniKullanici);
+            MessageBox.Show(yeniKullanici.Mesaj());
+            MessageBox.Show(yeniKullanici.Id.ToString());
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
-
+            
         }
 
         private void Kaiyit_giris_Click(object sender, EventArgs e)

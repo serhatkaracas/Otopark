@@ -57,16 +57,12 @@
             textBox18 = new TextBox();
             label10 = new Label();
             label11 = new Label();
-            label13 = new Label();
-            label14 = new Label();
             label15 = new Label();
-            textBox19 = new TextBox();
-            textBox20 = new TextBox();
-            textBox21 = new TextBox();
+            textBox_Ucret = new TextBox();
             listBox1 = new ListBox();
             label12 = new Label();
             button_musterisec = new Button();
-            button1 = new Button();
+            button_ucretGuncelle = new Button();
             button_cikisadmin = new Button();
             comboBox_musteriler = new ComboBox();
             comboBox_otoparkListesi = new ComboBox();
@@ -80,6 +76,7 @@
             label19 = new Label();
             label20 = new Label();
             textBox_otopark_no = new TextBox();
+            label_ciro = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -324,31 +321,11 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.FromArgb(0, 192, 0);
-            label11.Location = new Point(723, 199);
+            label11.Location = new Point(747, 196);
             label11.Name = "label11";
             label11.Size = new Size(93, 20);
             label11.TabIndex = 37;
             label11.Text = "Ücret tarifesi";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.FromArgb(192, 255, 192);
-            label13.Location = new Point(747, 385);
-            label13.Name = "label13";
-            label13.Size = new Size(102, 20);
-            label13.TabIndex = 35;
-            label13.Text = "Aylık abonelik";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.FromArgb(192, 255, 192);
-            label14.Location = new Point(747, 316);
-            label14.Name = "label14";
-            label14.Size = new Size(54, 20);
-            label14.TabIndex = 34;
-            label14.Text = "Günlük";
             // 
             // label15
             // 
@@ -360,29 +337,13 @@
             label15.TabIndex = 33;
             label15.Text = "Saatlik";
             // 
-            // textBox19
+            // textBox_Ucret
             // 
-            textBox19.Location = new Point(862, 373);
-            textBox19.Margin = new Padding(3, 4, 3, 4);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(114, 27);
-            textBox19.TabIndex = 32;
-            // 
-            // textBox20
-            // 
-            textBox20.Location = new Point(862, 304);
-            textBox20.Margin = new Padding(3, 4, 3, 4);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(114, 27);
-            textBox20.TabIndex = 31;
-            // 
-            // textBox21
-            // 
-            textBox21.Location = new Point(862, 233);
-            textBox21.Margin = new Padding(3, 4, 3, 4);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(114, 27);
-            textBox21.TabIndex = 30;
+            textBox_Ucret.Location = new Point(862, 241);
+            textBox_Ucret.Margin = new Padding(3, 4, 3, 4);
+            textBox_Ucret.Name = "textBox_Ucret";
+            textBox_Ucret.Size = new Size(114, 27);
+            textBox_Ucret.TabIndex = 30;
             // 
             // listBox1
             // 
@@ -416,16 +377,17 @@
             button_musterisec.Text = "müşteri seç";
             button_musterisec.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // button_ucretGuncelle
             // 
-            button1.BackColor = Color.LightCoral;
-            button1.Location = new Point(862, 445);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(114, 31);
-            button1.TabIndex = 41;
-            button1.Text = "Ücreti güncelle";
-            button1.UseVisualStyleBackColor = false;
+            button_ucretGuncelle.BackColor = Color.LightCoral;
+            button_ucretGuncelle.Location = new Point(747, 291);
+            button_ucretGuncelle.Margin = new Padding(3, 4, 3, 4);
+            button_ucretGuncelle.Name = "button_ucretGuncelle";
+            button_ucretGuncelle.Size = new Size(229, 31);
+            button_ucretGuncelle.TabIndex = 41;
+            button_ucretGuncelle.Text = "Ücreti güncelle";
+            button_ucretGuncelle.UseVisualStyleBackColor = false;
+            button_ucretGuncelle.Click += button_ucretGuncelle_Click;
             // 
             // button_cikisadmin
             // 
@@ -545,12 +507,22 @@
             textBox_otopark_no.Size = new Size(114, 27);
             textBox_otopark_no.TabIndex = 53;
             // 
+            // label_ciro
+            // 
+            label_ciro.AutoSize = true;
+            label_ciro.Location = new Point(767, 371);
+            label_ciro.Name = "label_ciro";
+            label_ciro.Size = new Size(36, 20);
+            label_ciro.TabIndex = 55;
+            label_ciro.Text = "Ciro";
+            // 
             // Admin_paneli
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
             ClientSize = new Size(1795, 876);
+            Controls.Add(label_ciro);
             Controls.Add(label20);
             Controls.Add(textBox_otopark_no);
             Controls.Add(label19);
@@ -564,17 +536,13 @@
             Controls.Add(comboBox_otoparkListesi);
             Controls.Add(comboBox_musteriler);
             Controls.Add(button_cikisadmin);
-            Controls.Add(button1);
+            Controls.Add(button_ucretGuncelle);
             Controls.Add(button_musterisec);
             Controls.Add(label12);
             Controls.Add(listBox1);
             Controls.Add(label11);
-            Controls.Add(label13);
-            Controls.Add(label14);
             Controls.Add(label15);
-            Controls.Add(textBox19);
-            Controls.Add(textBox20);
-            Controls.Add(textBox21);
+            Controls.Add(textBox_Ucret);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(textBox13);
@@ -642,16 +610,12 @@
         private TextBox textBox18;
         private Label label10;
         private Label label11;
-        private Label label13;
-        private Label label14;
         private Label label15;
-        private TextBox textBox19;
-        private TextBox textBox20;
-        private TextBox textBox21;
+        private TextBox textBox_Ucret;
         private ListBox listBox1;
         private Label label12;
         private Button button_musterisec;
-        private Button button1;
+        private Button button_ucretGuncelle;
         private Button button_cikisadmin;
         private ComboBox comboBox_musteriler;
         private ComboBox comboBox_otoparkListesi;
@@ -666,5 +630,6 @@
         private Button button_oparkEkle;
         private Label label20;
         private TextBox textBox_otopark_no;
+        private Label label_ciro;
     }
 }

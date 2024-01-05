@@ -8,11 +8,8 @@ namespace otopark
         {
             InitializeComponent();
         }
-        private void Kullanici_giris(object sender, EventArgs e)
-        {
-            MessageBox.Show("Kullanýcý giriþ ekranýna hoþgeldiniz");
-        }
-        private void button2_Click(object sender, EventArgs e)
+
+        public void button2_Click(object sender, EventArgs e)
         {
             int bulundu = 1;
             for (int i = 0; i < kullanici_kayit.Kullanici_list.Count; i++)
@@ -25,6 +22,7 @@ namespace otopark
                 else if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].Ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].Sifre)
                 {
                     bulundu = 2;
+                     MevcutKullanici.mevcutKullanici = kullanici_kayit.Kullanici_list[i];
                     break;
                 }
             }

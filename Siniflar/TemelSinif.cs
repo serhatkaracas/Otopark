@@ -8,7 +8,7 @@ namespace Siniflar
 {
     public abstract class TemelSinif
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public string Ad { get; set; }
         public abstract void Tanit();
     }
