@@ -43,7 +43,7 @@
             // button_kullanicicikis
             // 
             button_kullanicicikis.BackColor = Color.FromArgb(255, 128, 128);
-            button_kullanicicikis.Location = new Point(932, 175);
+            button_kullanicicikis.Location = new Point(695, 170);
             button_kullanicicikis.Margin = new Padding(3, 4, 3, 4);
             button_kullanicicikis.Name = "button_kullanicicikis";
             button_kullanicicikis.Size = new Size(86, 31);
@@ -55,7 +55,7 @@
             // KullaniciPanelButon1
             // 
             KullaniciPanelButon1.BackColor = Color.FromArgb(128, 255, 128);
-            KullaniciPanelButon1.Location = new Point(932, 100);
+            KullaniciPanelButon1.Location = new Point(695, 95);
             KullaniciPanelButon1.Name = "KullaniciPanelButon1";
             KullaniciPanelButon1.Size = new Size(104, 36);
             KullaniciPanelButon1.TabIndex = 25;
@@ -104,7 +104,7 @@
             // button_parket
             // 
             button_parket.BackColor = Color.Green;
-            button_parket.Location = new Point(697, 319);
+            button_parket.Location = new Point(533, 317);
             button_parket.Name = "button_parket";
             button_parket.Size = new Size(125, 53);
             button_parket.TabIndex = 35;
@@ -116,7 +116,7 @@
             // 
             button_parktanCik.BackColor = Color.FromArgb(192, 0, 0);
             button_parktanCik.ForeColor = SystemColors.ControlText;
-            button_parktanCik.Location = new Point(697, 390);
+            button_parktanCik.Location = new Point(534, 387);
             button_parktanCik.Name = "button_parktanCik";
             button_parktanCik.Size = new Size(125, 53);
             button_parktanCik.TabIndex = 37;
@@ -128,7 +128,7 @@
             // 
             textBox_saat.AcceptsReturn = true;
             textBox_saat.BackColor = Color.FloralWhite;
-            textBox_saat.Location = new Point(697, 266);
+            textBox_saat.Location = new Point(534, 264);
             textBox_saat.Name = "textBox_saat";
             textBox_saat.Size = new Size(125, 27);
             textBox_saat.TabIndex = 40;
@@ -137,7 +137,7 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(255, 255, 128);
-            label3.Location = new Point(539, 266);
+            label3.Location = new Point(533, 228);
             label3.Name = "label3";
             label3.Size = new Size(126, 20);
             label3.TabIndex = 41;
@@ -148,7 +148,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(128, 128, 255);
-            ClientSize = new Size(1112, 733);
+            ClientSize = new Size(836, 733);
             Controls.Add(label3);
             Controls.Add(textBox_saat);
             Controls.Add(button_parktanCik);
@@ -161,6 +161,7 @@
             Controls.Add(button_kullanicicikis);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Kullanici_paneli";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Kulanıcı paneli";
             Load += Kullanici_paneli_Load;
             ResumeLayout(false);

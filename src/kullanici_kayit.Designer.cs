@@ -90,7 +90,6 @@
             textBox_Plaka.Name = "textBox_Plaka";
             textBox_Plaka.Size = new Size(125, 27);
             textBox_Plaka.TabIndex = 6;
-            textBox_Plaka.TextChanged += textBox_Plaka_TextChanged;
             // 
             // label3
             // 
@@ -104,7 +103,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(191, 301);
+            label4.BackColor = Color.FromArgb(255, 224, 192);
+            label4.Location = new Point(191, 310);
             label4.Name = "label4";
             label4.Size = new Size(112, 20);
             label4.TabIndex = 7;
@@ -113,7 +113,7 @@
             // Kaiyit_giris
             // 
             Kaiyit_giris.BackColor = Color.DarkOliveGreen;
-            Kaiyit_giris.Location = new Point(317, 292);
+            Kaiyit_giris.Location = new Point(317, 310);
             Kaiyit_giris.Name = "Kaiyit_giris";
             Kaiyit_giris.Size = new Size(94, 29);
             Kaiyit_giris.TabIndex = 8;
@@ -142,7 +142,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 128);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(584, 450);
             Controls.Add(textBox_e_posta);
             Controls.Add(label5);
             Controls.Add(Kaiyit_giris);
@@ -157,7 +157,6 @@
             Name = "kullanici_kayit";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kullanıcı Kayıt";
-            Load += kullanici_kayit_Load;
             ResumeLayout(false);
             PerformLayout();
         }

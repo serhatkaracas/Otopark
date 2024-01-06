@@ -119,7 +119,6 @@
             Name = "Giris";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Giriş ekranı";
-            Load += Giris_Load;
             ResumeLayout(false);
             PerformLayout();
         }

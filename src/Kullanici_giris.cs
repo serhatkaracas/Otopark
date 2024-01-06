@@ -11,15 +11,15 @@ namespace otopark
 
         public void button2_Click(object sender, EventArgs e)
         {
-            int bulundu = 1;
+            int bulundu = 0;
+            if (text_ad_giris.Text == "admin" && text_sifre_giris.Text == "1")
+            {
+                bulundu = 1;
+            }
             for (int i = 0; i < kullanici_kayit.Kullanici_list.Count; i++)
             {
-                if (text_ad_giris.Text == "admin" && text_sifre_giris.Text == "1")
-                {
-                    bulundu = 1;
-                    break;
-                }
-                else if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].Ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].Sifre)
+
+                if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].Ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].Sifre)
                 {
                     bulundu = 2;
                      MevcutKullanici.mevcutKullanici = kullanici_kayit.Kullanici_list[i];
@@ -48,7 +48,6 @@ namespace otopark
         {
             MessageBox.Show("Þifre sýfýrlama baðlantýsý mail adresine gönderildi");
         }
-        private void Giris_Load(object sender, EventArgs e){}
         private void button_Hesapolustur_Click(object sender, EventArgs e)
         {
             kullanici_kayit Kullanici_kayit = new kullanici_kayit();

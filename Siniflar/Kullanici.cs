@@ -20,7 +20,7 @@
 
         virtual public string Mesaj()
         {
-            return "Kullanıcı Kaydedildi.";
+            return "Kaydınız başarıyla oluşturulmuştur.";
         }
         public override void Tanit()
         {

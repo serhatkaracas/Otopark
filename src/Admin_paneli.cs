@@ -19,7 +19,7 @@ namespace otopark
     {
         public Admin_paneli()
         {
-            Admin admin = new Admin("Serhat", "a", 505111, "a@a.com");
+            Admin admin = new Admin("Admin", "1", 505111, "a@a.com");
             MessageBox.Show(admin.Mesaj());
             InitializeComponent();
         }
@@ -46,8 +46,6 @@ namespace otopark
             this.Hide();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e) { }
-        private void comboBox_musteriler_SelectedIndexChanged(object sender, EventArgs e) { }
         public Siniflar.Otopark yeni_otopark;
         private void button_oparkEkle_Click(object sender, EventArgs e)
         {
@@ -87,15 +85,25 @@ namespace otopark
         private void button_ucretGuncelle_Click(object sender, EventArgs e)
         {
             MevcutKullanici.saatlikUcret = int.Parse(textBox_Ucret.Text);
+            MessageBox.Show("Saatlik ücret " + MevcutKullanici.saatlikUcret.ToString() + " TL olarak güncellendi");
         }
 
-        private void comboBox_parkYeriListesi_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void button_musteriGor_Click(object sender, EventArgs e)
         {
             // Listedeki index'i bul
-            int index = Admin_paneli.parkYeriListesi.FindIndex(i => i.otopark_no == comboBox_otoparkListesi.SelectedValue && i.park_yeri_no == comboBox_parkYeriListesi.SelectedIndex+1);
+            int index = Admin_paneli.parkYeriListesi.FindIndex(i => i.otopark_no == comboBox_otoparkListesi.SelectedValue && i.park_yeri_no == comboBox_parkYeriListesi.SelectedIndex + 1);
             // Eğer nesne listede varsa, yerine yeni nesneyi kopyala
             var secilenParkYeri = Admin_paneli.parkYeriListesi[index];
-            MessageBox.Show(secilenParkYeri.kullanici);
+            if (secilenParkYeri.kullanici != null)
+            {
+                MessageBox.Show("Şu an park yerindeki kişinin adı " + secilenParkYeri.kullanici);
+            }
+
+            else
+            {
+                MessageBox.Show("Park yeri boş");
+            }
         }
     }
 }

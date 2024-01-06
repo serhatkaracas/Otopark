@@ -19,9 +19,6 @@ namespace otopark
             InitializeComponent();
         }
 
-        private void kullanici_kayit_Load(object sender, EventArgs e)
-        {
-        }
         public Siniflar.Kullanici yeni;
 
         private void Button_kayit_Click(object sender, EventArgs e)
@@ -34,11 +31,9 @@ namespace otopark
             yeniKullanici.EPosta = textBox_e_posta.Text;
             Kullanici_list.Add(yeniKullanici);
             MessageBox.Show(yeniKullanici.Mesaj());
-            MessageBox.Show(yeniKullanici.Id.ToString());
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
-            
         }
 
         private void Kaiyit_giris_Click(object sender, EventArgs e)
@@ -46,13 +41,6 @@ namespace otopark
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
-        }
-
-        private void textBox_Plaka_TextChanged(object sender, EventArgs e) { }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

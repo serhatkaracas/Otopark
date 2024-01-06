@@ -13,7 +13,7 @@ namespace otopark
             ApplicationConfiguration.Initialize();
             Application.Run(new kullanici_kayit());
         }
-        public static string[] sifreler=new string[] {"a"};
+        public static string[] sifreler=new string[] {"1"};
         public static string[] kullaniciAdlari=new string[] {"admin"};
 
     }

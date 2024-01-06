@@ -31,10 +31,6 @@ namespace otopark
             OtoparkKullanici_listBox.DisplayMember = "ad";
             OtoparkKullanici_listBox.ValueMember = "otopark_no";
             parkYeriListesiGuncelleme();
-            MessageBox.Show(MevcutKullanici.mevcutKullanici.Ad);
-
-
-
         }
         private void OtoparkKullanici_listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -60,8 +56,7 @@ namespace otopark
                 MevcutKullanici.ucret= MevcutKullanici.saatlikUcret * parkSaati;
                 MevcutKullanici.ciro += MevcutKullanici.ucret;
                 // MessageBox ile seçilen değerleri göster
-                MessageBox.Show("Otopark no " + secilenParkYeri.otopark_no + "kulanici adı" + MevcutKullanici.mevcutKullanici.Ad);
-                MessageBox.Show("Ödemeniz gereken ücret " + MevcutKullanici.ucret);
+                MessageBox.Show("Park yeri numaranız " + secilenParkYeri.park_yeri_no + "\nÖdemeniz gereken ücret " + MevcutKullanici.ucret + "TL");
             }
             else
             {
