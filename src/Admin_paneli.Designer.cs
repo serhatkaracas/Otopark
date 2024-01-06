@@ -28,18 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -47,24 +35,14 @@
             label6 = new Label();
             label7 = new Label();
             label4 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
-            textBox15 = new TextBox();
-            textBox16 = new TextBox();
-            textBox17 = new TextBox();
-            textBox18 = new TextBox();
             label10 = new Label();
             label11 = new Label();
             label15 = new Label();
             textBox_Ucret = new TextBox();
             listBox1 = new ListBox();
             label12 = new Label();
-            button_musterisec = new Button();
             button_ucretGuncelle = new Button();
             button_cikisadmin = new Button();
-            comboBox_musteriler = new ComboBox();
             comboBox_otoparkListesi = new ComboBox();
             label16 = new Label();
             textBox_otopark_adi = new TextBox();
@@ -77,103 +55,8 @@
             label20 = new Label();
             textBox_otopark_no = new TextBox();
             label_ciro = new Label();
+            listBox2 = new ListBox();
             SuspendLayout();
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(270, 101);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(114, 27);
-            textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(414, 101);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(65, 27);
-            textBox2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(414, 172);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(65, 27);
-            textBox3.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(270, 172);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(114, 27);
-            textBox4.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(414, 241);
-            textBox5.Margin = new Padding(3, 4, 3, 4);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(65, 27);
-            textBox5.TabIndex = 6;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(270, 241);
-            textBox6.Margin = new Padding(3, 4, 3, 4);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(114, 27);
-            textBox6.TabIndex = 5;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(414, 451);
-            textBox7.Margin = new Padding(3, 4, 3, 4);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(65, 27);
-            textBox7.TabIndex = 12;
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(270, 451);
-            textBox8.Margin = new Padding(3, 4, 3, 4);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(114, 27);
-            textBox8.TabIndex = 11;
-            // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(414, 381);
-            textBox9.Margin = new Padding(3, 4, 3, 4);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(65, 27);
-            textBox9.TabIndex = 10;
-            // 
-            // textBox10
-            // 
-            textBox10.Location = new Point(270, 381);
-            textBox10.Margin = new Padding(3, 4, 3, 4);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(114, 27);
-            textBox10.TabIndex = 9;
-            // 
-            // textBox11
-            // 
-            textBox11.Location = new Point(414, 315);
-            textBox11.Margin = new Padding(3, 4, 3, 4);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(65, 27);
-            textBox11.TabIndex = 8;
-            // 
-            // textBox12
-            // 
-            textBox12.Location = new Point(270, 311);
-            textBox12.Margin = new Padding(3, 4, 3, 4);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(114, 27);
-            textBox12.TabIndex = 7;
             // 
             // label1
             // 
@@ -239,74 +122,6 @@
             label4.TabIndex = 20;
             label4.Text = "Müşteriler";
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.FromArgb(255, 255, 128);
-            label8.Location = new Point(414, 65);
-            label8.Name = "label8";
-            label8.Size = new Size(73, 20);
-            label8.TabIndex = 21;
-            label8.Text = "Giriş saati";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.FromArgb(255, 255, 128);
-            label9.Location = new Point(502, 65);
-            label9.Name = "label9";
-            label9.Size = new Size(96, 20);
-            label9.TabIndex = 28;
-            label9.Text = "Çıkacağı saat";
-            // 
-            // textBox13
-            // 
-            textBox13.Location = new Point(502, 451);
-            textBox13.Margin = new Padding(3, 4, 3, 4);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(65, 27);
-            textBox13.TabIndex = 27;
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(502, 381);
-            textBox14.Margin = new Padding(3, 4, 3, 4);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(65, 27);
-            textBox14.TabIndex = 26;
-            // 
-            // textBox15
-            // 
-            textBox15.Location = new Point(502, 315);
-            textBox15.Margin = new Padding(3, 4, 3, 4);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(65, 27);
-            textBox15.TabIndex = 25;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(502, 241);
-            textBox16.Margin = new Padding(3, 4, 3, 4);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(65, 27);
-            textBox16.TabIndex = 24;
-            // 
-            // textBox17
-            // 
-            textBox17.Location = new Point(502, 172);
-            textBox17.Margin = new Padding(3, 4, 3, 4);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(65, 27);
-            textBox17.TabIndex = 23;
-            // 
-            // textBox18
-            // 
-            textBox18.Location = new Point(502, 100);
-            textBox18.Margin = new Padding(3, 4, 3, 4);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(65, 27);
-            textBox18.TabIndex = 22;
-            // 
             // label10
             // 
             label10.AutoSize = true;
@@ -352,7 +167,7 @@
             listBox1.Location = new Point(1151, 112);
             listBox1.Margin = new Padding(3, 4, 3, 4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(151, 104);
+            listBox1.Size = new Size(151, 244);
             listBox1.TabIndex = 38;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
@@ -365,17 +180,6 @@
             label12.Size = new Size(99, 20);
             label12.TabIndex = 39;
             label12.Text = "Müşteri listesi";
-            // 
-            // button_musterisec
-            // 
-            button_musterisec.BackColor = Color.FromArgb(128, 255, 128);
-            button_musterisec.Location = new Point(1346, 112);
-            button_musterisec.Margin = new Padding(3, 4, 3, 4);
-            button_musterisec.Name = "button_musterisec";
-            button_musterisec.Size = new Size(86, 31);
-            button_musterisec.TabIndex = 40;
-            button_musterisec.Text = "müşteri seç";
-            button_musterisec.UseVisualStyleBackColor = false;
             // 
             // button_ucretGuncelle
             // 
@@ -400,15 +204,6 @@
             button_cikisadmin.Text = "Çıkış";
             button_cikisadmin.UseVisualStyleBackColor = false;
             button_cikisadmin.Click += button_cikisadmin_Click;
-            // 
-            // comboBox_musteriler
-            // 
-            comboBox_musteriler.FormattingEnabled = true;
-            comboBox_musteriler.Location = new Point(1151, 263);
-            comboBox_musteriler.Name = "comboBox_musteriler";
-            comboBox_musteriler.Size = new Size(151, 28);
-            comboBox_musteriler.TabIndex = 43;
-            comboBox_musteriler.SelectedIndexChanged += comboBox_musteriler_SelectedIndexChanged;
             // 
             // comboBox_otoparkListesi
             // 
@@ -443,6 +238,7 @@
             comboBox_parkYeriListesi.Name = "comboBox_parkYeriListesi";
             comboBox_parkYeriListesi.Size = new Size(151, 28);
             comboBox_parkYeriListesi.TabIndex = 47;
+            comboBox_parkYeriListesi.SelectedIndexChanged += comboBox_parkYeriListesi_SelectedIndexChanged;
             // 
             // button_oparkEkle
             // 
@@ -510,11 +306,22 @@
             // label_ciro
             // 
             label_ciro.AutoSize = true;
-            label_ciro.Location = new Point(767, 371);
+            label_ciro.BackColor = Color.FromArgb(128, 255, 255);
+            label_ciro.Location = new Point(747, 370);
             label_ciro.Name = "label_ciro";
             label_ciro.Size = new Size(36, 20);
             label_ciro.TabIndex = 55;
             label_ciro.Text = "Ciro";
+            // 
+            // listBox2
+            // 
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 20;
+            listBox2.Location = new Point(270, 112);
+            listBox2.Margin = new Padding(3, 4, 3, 4);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(134, 564);
+            listBox2.TabIndex = 56;
             // 
             // Admin_paneli
             // 
@@ -522,6 +329,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
             ClientSize = new Size(1795, 876);
+            Controls.Add(listBox2);
             Controls.Add(label_ciro);
             Controls.Add(label20);
             Controls.Add(textBox_otopark_no);
@@ -534,24 +342,14 @@
             Controls.Add(label16);
             Controls.Add(textBox_otopark_adi);
             Controls.Add(comboBox_otoparkListesi);
-            Controls.Add(comboBox_musteriler);
             Controls.Add(button_cikisadmin);
             Controls.Add(button_ucretGuncelle);
-            Controls.Add(button_musterisec);
             Controls.Add(label12);
             Controls.Add(listBox1);
             Controls.Add(label11);
             Controls.Add(label15);
             Controls.Add(textBox_Ucret);
             Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(textBox13);
-            Controls.Add(textBox14);
-            Controls.Add(textBox15);
-            Controls.Add(textBox16);
-            Controls.Add(textBox17);
-            Controls.Add(textBox18);
-            Controls.Add(label8);
             Controls.Add(label4);
             Controls.Add(label7);
             Controls.Add(label5);
@@ -559,18 +357,6 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox7);
-            Controls.Add(textBox8);
-            Controls.Add(textBox9);
-            Controls.Add(textBox10);
-            Controls.Add(textBox11);
-            Controls.Add(textBox12);
-            Controls.Add(textBox5);
-            Controls.Add(textBox6);
-            Controls.Add(textBox3);
-            Controls.Add(textBox4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
             ForeColor = Color.Black;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Admin_paneli";
@@ -581,18 +367,6 @@
         }
 
         #endregion
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -600,24 +374,14 @@
         private Label label6;
         private Label label7;
         private Label label4;
-        private Label label8;
-        private Label label9;
-        private TextBox textBox13;
-        private TextBox textBox14;
-        private TextBox textBox15;
-        private TextBox textBox16;
-        private TextBox textBox17;
-        private TextBox textBox18;
         private Label label10;
         private Label label11;
         private Label label15;
         private TextBox textBox_Ucret;
         private ListBox listBox1;
         private Label label12;
-        private Button button_musterisec;
         private Button button_ucretGuncelle;
         private Button button_cikisadmin;
-        private ComboBox comboBox_musteriler;
         private ComboBox comboBox_otoparkListesi;
         private Label label16;
         private TextBox textBox_otopark_adi;
@@ -631,5 +395,6 @@
         private Label label20;
         private TextBox textBox_otopark_no;
         private Label label_ciro;
+        private ListBox listBox2;
     }
 }

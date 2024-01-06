@@ -33,6 +33,11 @@ namespace otopark
             }
             int ciro = MevcutKullanici.ciro;
             label_ciro.Text = ciro.ToString();
+
+            comboBox_otoparkListesi.DataSource = null;
+            comboBox_otoparkListesi.DataSource = otoparklist;
+            comboBox_otoparkListesi.DisplayMember = "ad";
+            comboBox_otoparkListesi.ValueMember = "otopark_no";
         }
         private void button_cikisadmin_Click(object sender, EventArgs e)
         {
@@ -40,6 +45,7 @@ namespace otopark
             giris.Show();
             this.Hide();
         }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) { }
         private void comboBox_musteriler_SelectedIndexChanged(object sender, EventArgs e) { }
         public Siniflar.Otopark yeni_otopark;
@@ -81,6 +87,15 @@ namespace otopark
         private void button_ucretGuncelle_Click(object sender, EventArgs e)
         {
             MevcutKullanici.saatlikUcret = int.Parse(textBox_Ucret.Text);
+        }
+
+        private void comboBox_parkYeriListesi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Listedeki index'i bul
+            int index = Admin_paneli.parkYeriListesi.FindIndex(i => i.otopark_no == comboBox_otoparkListesi.SelectedValue && i.park_yeri_no == comboBox_parkYeriListesi.SelectedIndex+1);
+            // Eğer nesne listede varsa, yerine yeni nesneyi kopyala
+            var secilenParkYeri = Admin_paneli.parkYeriListesi[index];
+            MessageBox.Show(secilenParkYeri.kullanici);
         }
     }
 }
