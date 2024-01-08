@@ -11,5 +11,4 @@
             Console.WriteLine($"Park Yeri No: {park_yeri_no}");
         }
     }
-
 }

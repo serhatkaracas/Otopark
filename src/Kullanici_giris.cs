@@ -8,7 +8,6 @@ namespace otopark
         {
             InitializeComponent();
         }
-
         public void button2_Click(object sender, EventArgs e)
         {
             int bulundu = 0;
@@ -16,16 +15,20 @@ namespace otopark
             {
                 bulundu = 1;
             }
-            for (int i = 0; i < kullanici_kayit.Kullanici_list.Count; i++)
+            if (bulundu == 0)
             {
-
-                if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].Ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].Sifre)
+                for (int i = 0; i < kullanici_kayit.Kullanici_list.Count; i++)
                 {
-                    bulundu = 2;
-                     MevcutKullanici.mevcutKullanici = kullanici_kayit.Kullanici_list[i];
-                    break;
+
+                    if (text_ad_giris.Text == kullanici_kayit.Kullanici_list[i].Ad && text_sifre_giris.Text == kullanici_kayit.Kullanici_list[i].Sifre)
+                    {
+                        bulundu = 2;
+                        MevcutKullanici.mevcutKullanici = kullanici_kayit.Kullanici_list[i];
+                        break;
+                    }
                 }
             }
+
             if (bulundu == 1)
             {
                 Admin_paneli admin_paneli = new Admin_paneli();

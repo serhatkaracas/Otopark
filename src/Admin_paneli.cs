@@ -32,7 +32,7 @@ namespace otopark
                 listBox1.Items.Add(eleman.Ad);
             }
             int ciro = MevcutKullanici.ciro;
-            label_ciro.Text = ciro.ToString();
+            label_ciro.Text = (ciro.ToString()+" TL");
 
             comboBox_otoparkListesi.DataSource = null;
             comboBox_otoparkListesi.DataSource = otoparklist;
@@ -45,7 +45,6 @@ namespace otopark
             giris.Show();
             this.Hide();
         }
-
         public Siniflar.Otopark yeni_otopark;
         private void button_oparkEkle_Click(object sender, EventArgs e)
         {
@@ -81,14 +80,11 @@ namespace otopark
                 comboBox_parkYeriListesi.ValueMember = "otopark_no";
             }
         }
-
         private void button_ucretGuncelle_Click(object sender, EventArgs e)
         {
             MevcutKullanici.saatlikUcret = int.Parse(textBox_Ucret.Text);
             MessageBox.Show("Saatlik ücret " + MevcutKullanici.saatlikUcret.ToString() + " TL olarak güncellendi");
         }
-
-
         private void button_musteriGor_Click(object sender, EventArgs e)
         {
             // Listedeki index'i bul
@@ -99,7 +95,6 @@ namespace otopark
             {
                 MessageBox.Show("Şu an park yerindeki kişinin adı " + secilenParkYeri.kullanici);
             }
-
             else
             {
                 MessageBox.Show("Park yeri boş");

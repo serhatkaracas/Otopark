@@ -49,6 +49,7 @@
             label1 = new Label();
             textBox_park_yeri_sayisi = new TextBox();
             groupBox1 = new GroupBox();
+            label2 = new Label();
             groupBox2 = new GroupBox();
             button_musteriGor = new Button();
             groupBox3 = new GroupBox();
@@ -230,7 +231,7 @@
             // 
             label_ciro.AutoSize = true;
             label_ciro.BackColor = Color.FromArgb(128, 255, 128);
-            label_ciro.Location = new Point(30, 217);
+            label_ciro.Location = new Point(124, 220);
             label_ciro.Name = "label_ciro";
             label_ciro.Size = new Size(36, 20);
             label_ciro.TabIndex = 55;
@@ -256,6 +257,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.FromArgb(192, 192, 255);
+            groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(textBox_Ucret);
             groupBox1.Controls.Add(label_ciro);
@@ -267,6 +269,16 @@
             groupBox1.TabIndex = 57;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(128, 255, 128);
+            label2.Location = new Point(30, 220);
+            label2.Name = "label2";
+            label2.Size = new Size(88, 20);
+            label2.TabIndex = 56;
+            label2.Text = "Toplam ciro";
             // 
             // groupBox2
             // 
@@ -380,5 +392,6 @@
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private Button button_musteriGor;
+        private Label label2;
     }
 }

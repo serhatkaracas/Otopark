@@ -9,7 +9,6 @@ namespace Siniflar
     public class Otopark : ParkYeri,IKaydedilebilir
     {
         public readonly object IKaydedilebilir;
-
         public int park_yeri_sayisi { get; set; }
         public string ad { get; set; }
         public void Kaydet()
@@ -25,5 +24,4 @@ namespace Siniflar
             return "Otopark Kaydedildi";
         }
     }   
-
 }

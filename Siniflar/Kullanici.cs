@@ -3,7 +3,6 @@
     public class Kullanici : TemelSinif
     {
         public static object kullanici_kayit;
-
         public string Sifre { get; set; }
         public string EPosta { get; set; }
         public int Telefon { get; set; }
@@ -16,8 +15,6 @@
         {
             park_yeri_no = -1;    
         }
-
-
         virtual public string Mesaj()
         {
             return "Kaydınız başarıyla oluşturulmuştur.";
@@ -26,6 +23,5 @@
         {
             Console.WriteLine($"Ad: {Ad}, E-Posta: {EPosta}, Telefon: {Telefon}");
         }
-
     }
 }

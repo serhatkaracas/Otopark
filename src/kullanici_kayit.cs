@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace otopark
 {
     public partial class kullanici_kayit : Form
@@ -18,9 +17,7 @@ namespace otopark
         {
             InitializeComponent();
         }
-
         public Siniflar.Kullanici yeni;
-
         private void Button_kayit_Click(object sender, EventArgs e)
         {
             Kullanici yeniKullanici = new Kullanici();
@@ -35,7 +32,6 @@ namespace otopark
             giris.Show();
             this.Hide();
         }
-
         private void Kaiyit_giris_Click(object sender, EventArgs e)
         {
             Giris giris = new Giris();
